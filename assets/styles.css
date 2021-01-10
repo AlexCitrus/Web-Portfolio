@@ -266,7 +266,17 @@ img {
   .home__img {
     position: absolute;
     right: 30px;
-    top: 300px;
+    top: 360px;
+    bottom: 100px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .home__img {
+    position: absolute;
+    right: 30px;
+    top: 360px;
     bottom: 100px;
     width: 100px;
   }
