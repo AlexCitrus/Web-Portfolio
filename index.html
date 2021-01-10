@@ -3,7 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <script src="./assets/main.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal" defer></script>
     <title>Alexander Pasoquin</title>
   </head>
-  <body></body>
+  <body>
+    <!-- HEADER -->
+    <header class="headerOne">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">Alex</a>
+        </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Work</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mainOne">
+      <!-- HOME -->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hi, <br />I am <span class="home__title-color">Alex</span><br />Web
+            Developer
+          </h1>
+          <a href="#" class="button">Contact</a>
+        </div>
+
+        <div class="home__social">
+          <a href="#" class="home__social-icon"
+            ><i class="bx bxl-linkedin-square"></i
+          ></a>
+          <a href="#" class="home__social-icon"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="#" class="home__social-icon"
+            ><i class="bx bxl-youtube"></i
+          ></a>
+        </div>
+
+        <div class="home__img">
+          <img src="./assets/logo normal mode.png" alt="" srcset="" />
+        </div>
+      </section>
+
+      <section class="about section" id="about"></section>
+    </main>
+  </body>
 </html>
