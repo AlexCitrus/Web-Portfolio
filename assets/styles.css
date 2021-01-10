@@ -262,12 +262,22 @@ img {
   width: 295px;
 }
 
+@media screen and (max-width: 340px) {
+  .home__img {
+    position: absolute;
+    right: 30px;
+    top: 300px;
+    bottom: 100px;
+    width: 100px;
+  }
+}
+
 @media screen and (max-width: 451px) {
   .home__img {
     position: absolute;
     right: 30px;
     bottom: 100px;
-    width: 295px;
+    width: 250px;
   }
 }
 
