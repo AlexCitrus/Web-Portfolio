@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel='shortcut icon' type="image/jpg" href="./favicon_io/logo normal mode.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Varela&display=swap"
@@ -29,10 +30,10 @@
             <li class="nav__item">
               <a href="#" class="nav__link active">Home</a>
             </li>
-            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Work</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+            <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
           </ul>
         </div>
 
@@ -70,7 +71,114 @@
         </div>
       </section>
 
-      <section class="about section" id="about"></section>
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="./assets/about.jfif" alt="" />
+          </div>
+
+          <div>
+            <h2 class="about__subtitle">Alexander Pasoquin</h2>
+            <p class="about__text">
+              A junior web developer who's in love with 💻 programming and I enjoy learning about new technologies. 🚀
+              
+            </p><br><br>
+            <p class="about__text">
+                A Software Development strand completer 🎓 under the TVL track. 
+                
+              </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills section" id='skills'>
+          <h2 class="section-title">Skills</h2>
+
+          <div class="skills__container bd-grid">
+            
+              <div>
+                  <h2 class="skills__subtitle">Front-end Web Development</h2>
+                  <br>
+                  <!-- <p class="skills__text">Front-en Development with advanced skills with HTML5, CSS and JAVASCRIPT. </p> -->
+
+    
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-html5 skills__icon' ></i>
+                            <span class="skills__names">HTML5</span>
+                        </div>
+                    </div>
+
+                     <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-css3 skills__icon' ></i>
+                            <span class="skills__names">CSS3</span>
+                        </div>
+                     </div>
+                    
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-javascript skills__icon' ></i>
+                            <span class="skills__names">JAVASCRIPT</span>
+                        </div>
+                    </div>
+
+                        <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-git skills__icon' ></i>
+                            <span class="skills__names">GIT</span>
+                        </div>
+                        </div>
+
+
+                    </div>
+          </div>
+              
+          </div>
+      </section>
+
+      <section class="project section" id="projects">
+          <h2 class="section-titleP">Projects</h2>
+
+          <div class="projects__container bd-grid">
+              <div class="projects__img">
+                  <img src="./assets/TributePage.png" alt="" srcset="">
+              </div>
+
+              <div class="projects__img">
+                <img src="./assets/Survey Form.png" alt="" srcset="">
+            </div>
+
+            <div class="projects__img">
+                <img src="./assets/productPage.png" alt="" srcset="">
+            </div>
+
+            <!-- <div class="projects__img">
+                <img src="./assets/consoleQuiz.png" alt="" srcset="">
+            </div> -->
+
+            <div class="projects__img">
+                <img src="./assets/Chess.png" alt="" srcset="">
+            </div>
+          </div>
+      </section>
+
+      <section class="contact section" id="contact">
+          <h2 class="section-titleP">Contact</h2>
+
+          <div class="contact__container bd-grid">
+              <form action="" class="contact-form">
+                  <input type="text" placeholder="Name" class="contact__input">
+                  <input type="mail" placeholder="Email" class="contact__input">
+                  <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+
+                  <input type="button" value="Enter" class="contact__button">
+              </form>
+          </div>
+      </section>
     </main>
   </body>
 </html>
