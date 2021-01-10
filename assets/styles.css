@@ -262,6 +262,15 @@ img {
   width: 295px;
 }
 
+@media screen and (max-width: 451px) {
+  .home__img {
+    position: absolute;
+    right: 30px;
+    bottom: 120px;
+    width: 295px;
+  }
+}
+
 /* BUTTONS */
 .button {
   display: inline-block;
@@ -383,3 +392,5 @@ img {
   cursor: pointer;
   margin-left: auto;
 }
+
+/* FOOTER */
