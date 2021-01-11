@@ -141,16 +141,65 @@ img {
   background-size: cover;
 }
 
-.spanA {
-  animation: spanA 2s;
-  transition: 3s;
-}
-.spanA:hover {
-  transition: 0.5s;
+.in {
+  /* animation: spanA 2s; */
+  /* transition: 3s; */
+  animation-name: rubberBand;
   color: #08fdd8;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  display: inline-block;
 }
 
-@keyframes spanA {
+.out {
+  transition: 3s;
+  color: var(--second-color);
+}
+
+/* .spanA:hover {
+  animation-name: rubberBand;
+  color: #08fdd8;
+} */
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+#thinText {
+  display: none;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+/* @keyframes spanA {
   0% {
     transform: translateY(0);
   }
@@ -160,7 +209,7 @@ img {
   0% {
     transform: translateY(0);
   }
-}
+} */
 
 .bd-grid {
   max-width: 1024px;
@@ -249,6 +298,11 @@ img {
 }
 
 /* HOME */
+
+/* #front {
+  position: absolute;
+} */
+
 .home {
   height: calc(100vh - 3rem);
   row-gap: 1rem;
@@ -269,7 +323,7 @@ img {
 
 .home__title-color {
   color: var(--first-color);
-  transition: 3s;
+  transition: 2s;
 }
 
 .home__title-color:hover {
@@ -337,7 +391,7 @@ img {
   color: var(--first-color);
   padding: 0.75rem 2.5rem;
   font-weight: var(--font-semi);
-  border: 1px solid var(--first-color);
+  border: 2px solid var(--first-color);
   border-radius: 0.5rem;
 }
 
@@ -488,6 +542,12 @@ img {
   font-size: var(--normal-font-size);
   cursor: pointer;
   margin-left: auto;
+  border: 2px solid var(--first-color);
+  background-color: var(--bg-color);
+}
+
+.contact__button button {
+  border: 2px solid var(--first-color);
 }
 
 /* FOOTER */
@@ -567,6 +627,12 @@ img {
   }
   .nav__toggle {
     display: none;
+  }
+  /* .nav__logo {
+  } */
+
+  .home__social-icon {
+    width: 20px;
   }
 
   .nav__link {
