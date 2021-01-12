@@ -36,6 +36,7 @@ const sr = ScrollReveal({
 });
 
 let spanA = document.querySelectorAll(".spanA");
+let imgA = document.querySelector(".home__img");
 //   result;
 // for (let i = 0; i < spanA.length; i++) {
 //   result = spanA[i];
@@ -49,6 +50,16 @@ let spanA = document.querySelectorAll(".spanA");
 //   result.classList.add("out");
 // });
 // }
+
+imgA.addEventListener("mouseover", function () {
+  imgA.classList.add("in");
+  imgA.classList.remove("out");
+});
+
+imgA.addEventListener("mouseout", function () {
+  imgA.classList.add("out");
+  setTimeout(removeaniImg, 1000);
+});
 for (let i = 0; i < spanA.length; i++) {
   spanA[i].addEventListener("mouseover", function () {
     spanA[i].classList.add("in");
@@ -76,6 +87,11 @@ for (let i = 0; i < spanA.length; i++) {
   }
 
   setInterval(spanA[i].classList.remove("in"), 3000);
+}
+
+function removeaniImg() {
+  imgA.classList.remove("out");
+  imgA.classList.remove("in");
 }
 
 sr.reveal(".home__title", {});
