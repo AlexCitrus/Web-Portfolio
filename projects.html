@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/styles.css" />
-    <script src="./assets/home.js" defer></script>
+    <script src="./assets/projects.js" defer></script>
 
     <title>Alexander Pasoquin</title>
   </head>
@@ -33,7 +33,7 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link active">Home</a>
+              <a href="./index.html" class="nav__link">Home</a>
             </li>
             <li class="nav__item">
               <a href="./about.html" class="nav__link">About</a>
@@ -42,7 +42,7 @@
               <a href="./skills.html" class="nav__link">Skills</a>
             </li>
             <li class="nav__item">
-              <a href="./projects.html" class="nav__link">Projects</a>
+              <a href="#" class="nav__link active">Projects</a>
             </li>
             <li class="nav__item">
               <a href="./contacts.html" class="nav__link">Contact</a>
@@ -57,46 +57,57 @@
     </header>
 
     <main class="mainOne">
-      <!-- HOME -->
-      <!-- <canvas id="particles-js"></canvas> -->
-      <section class="home bd-grid" id="home">
-        <div class="home__data">
-          <h1 class="home__title">
-            <span class="spanA">H</span><span class="spanA">i</span
-            ><span class="spanA">,</span> <br /><span class="spanA">I</span>
-            <span class="spanA">a</span><span class="spanA">m</span>
-            <span class="home__title-color">Alex,</span><br /><span
-              class="spanA"
-              >W</span
-            ><span class="spanA">e</span><span class="spanA">b </span>
-            <span class="spanA">D</span><span class="spanA">e</span
-            ><span class="spanA">v</span><span class="spanA">e</span
-            ><span class="spanA">l</span><span class="spanA">o</span
-            ><span class="spanA">p</span><span class="spanA">e</span
-            ><span class="spanA">r</span><span class="spanA">.</span><br />
-            <span id="thinText">Front End Developer</span>
-          </h1>
-          <a href="#contact" class="button">Contact</a>
-        </div>
+      <!-- PROJECTS -->
+      <section class="project section" id="projects">
+        <h2 class="section-title">
+          <span class="spanA">P</span><span class="spanA">r</span
+          ><span class="spanA">o</span><span class="spanA">j</span
+          ><span class="spanA">e</span><span class="spanA">c</span
+          ><span class="spanA">t</span><span class="spanA">s</span>
+        </h2>
 
-        <div class="home__social">
-          <a
-            href="https://www.linkedin.com/in/patrick-alexander-pasoquin-25b750193"
-            class="home__social-icon"
-            ><i class="bx bxl-linkedin-square"></i
-          ></a>
-          <a href="https://github.com/AlexCitrus" class="home__social-icon"
-            ><i class="bx bxl-github"></i
-          ></a>
-          <a
-            href="https://youtube.com/channel/UCB7aRHL6BhfwBbXBUO_3gyw"
-            class="home__social-icon"
-            ><i class="bx bxl-youtube"></i
-          ></a>
-        </div>
+        <div class="projects__container bd-grid">
+          <div class="projects__img">
+            <a
+              href="https://alexcitrus.github.io/batch5-activities/Activity%20Tribute%20Page/TributePage.html"
+              target="blank"
+              ><img src="./assets/TributePage.png" alt="" srcset=""
+            /></a>
+          </div>
 
-        <div class="home__img">
-          <img src="./assets/logo normal mode.png" alt="" srcset="" />
+          <div class="projects__img">
+            <a
+              href="https://alexcitrus.github.io/batch5-activities/Survey%20Form/surveyform.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/Survey Form.png" alt="" srcset=""
+            /></a>
+          </div>
+
+          <div class="projects__img">
+            <a
+              href="https://alexcitrus.github.io/batch5-activities/Product%20Landing%20Page/ProductLandingPage.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/productPage.png" alt="" srcset=""
+            /></a>
+          </div>
+
+          <!-- <div class="projects__img">
+                <img src="./assets/consoleQuiz.png" alt="" srcset="">
+            </div> -->
+
+          <div class="projects__img">
+            <a
+              href="https://alexcitrus.github.io/batch5-activities/Chess%20with%20Javascript/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/Chess.png" alt="" srcset=""
+            /></a>
+          </div>
         </div>
       </section>
       <div class="wrap-loader">
@@ -114,6 +125,7 @@
         </div>
         <div class="loader-text">LOADING</div>
       </div>
+
       <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
       <script src="https://unpkg.com/scrollreveal"></script>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="./favicon_io/logo normal mode.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <script src="./assets/skills.js" defer></script>
+
+    <title>Alexander Pasoquin</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+
+    <header class="headerOne none">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">Alex</a>
+        </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="./about.html" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="./skills.html" class="nav__link active">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="./projects.html" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="./contacts.html" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mainOne">
+      <section class="skills section" id="skills">
+        <h2 class="section-title">
+          <span class="spanA">S</span><span class="spanA">k</span
+          ><span class="spanA">i</span><span class="spanA">l</span
+          ><span class="spanA">l</span><span class="spanA">s</span>
+        </h2>
+
+        <div class="skills__container bd-grid">
+          <h2 class="skills__subtitle">Front-end Web Development</h2>
+          <!-- <p class="skills__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            vel excepturi ad ducimus aliquid quam rem. Hic soluta, mollitia
+            commodi ullam sint ea porro vero quas velit, at non doloribus.
+          </p> -->
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-html5 skills__icon"></i>
+              <span class="skills__names">HTML5</span>
+            </div>
+            <div>
+              <span class="skills__percentage"></span>
+            </div>
+
+            <div class="skills__bar skills__html"></div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-css3 skills__icon"></i>
+              <span class="skills__names">CSS3</span>
+            </div>
+
+            <div>
+              <span class="skills__percentage"></span>
+            </div>
+
+            <div class="skills__bar skills__css"></div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-javascript skills__icon"></i>
+              <span class="skills__names">JAVASCRIPT</span>
+            </div>
+            <div>
+              <span class="skills__percentage"></span>
+            </div>
+
+            <div class="skills__bar skills__javascript"></div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-git skills__icon"></i>
+              <span class="skills__names">GIT</span>
+            </div>
+            <div>
+              <span class="skills__percentage"></span>
+            </div>
+            <div class="skills__bar skills__git"></div>
+          </div>
+
+          <div>
+            <img
+              src="./assets/skills.jpeg"
+              alt=""
+              srcset=""
+              class="skills__img"
+            />
+          </div>
+        </div>
+      </section>
+      <div class="wrap-loader">
+        <div class="loader">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="wrap-text">
+            <div class="text">
+              <span>L</span><span>O</span><span>A</span><span>D</span
+              ><span>I</span><span>N</span><span>G</span><span>...</span>
+            </div>
+          </div>
+        </div>
+        <div class="loader-text">LOADING</div>
+      </div>
+      <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="https://unpkg.com/scrollreveal"></script>
+    </main>
+  </body>
+</html>

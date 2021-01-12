@@ -18,8 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/styles.css" />
-    <script src="./assets/home.js" defer></script>
-
+    <script src="./assets/about.js" defer></script>
     <title>Alexander Pasoquin</title>
   </head>
   <body>
@@ -33,10 +32,10 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link active">Home</a>
+              <a href="/index.html" class="nav__link">Home</a>
             </li>
             <li class="nav__item">
-              <a href="./about.html" class="nav__link">About</a>
+              <a href="#about" class="nav__link active">About</a>
             </li>
             <li class="nav__item">
               <a href="./skills.html" class="nav__link">Skills</a>
@@ -57,46 +56,29 @@
     </header>
 
     <main class="mainOne">
-      <!-- HOME -->
-      <!-- <canvas id="particles-js"></canvas> -->
-      <section class="home bd-grid" id="home">
-        <div class="home__data">
-          <h1 class="home__title">
-            <span class="spanA">H</span><span class="spanA">i</span
-            ><span class="spanA">,</span> <br /><span class="spanA">I</span>
-            <span class="spanA">a</span><span class="spanA">m</span>
-            <span class="home__title-color">Alex,</span><br /><span
-              class="spanA"
-              >W</span
-            ><span class="spanA">e</span><span class="spanA">b </span>
-            <span class="spanA">D</span><span class="spanA">e</span
-            ><span class="spanA">v</span><span class="spanA">e</span
-            ><span class="spanA">l</span><span class="spanA">o</span
-            ><span class="spanA">p</span><span class="spanA">e</span
-            ><span class="spanA">r</span><span class="spanA">.</span><br />
-            <span id="thinText">Front End Developer</span>
-          </h1>
-          <a href="#contact" class="button">Contact</a>
-        </div>
+      <section class="about section" id="about">
+        <h2 class="section-title">
+          <span class="spanA">A</span><span class="spanA">b</span
+          ><span class="spanA">o</span><span class="spanA">u</span
+          ><span class="spanA">t</span>
+        </h2>
 
-        <div class="home__social">
-          <a
-            href="https://www.linkedin.com/in/patrick-alexander-pasoquin-25b750193"
-            class="home__social-icon"
-            ><i class="bx bxl-linkedin-square"></i
-          ></a>
-          <a href="https://github.com/AlexCitrus" class="home__social-icon"
-            ><i class="bx bxl-github"></i
-          ></a>
-          <a
-            href="https://youtube.com/channel/UCB7aRHL6BhfwBbXBUO_3gyw"
-            class="home__social-icon"
-            ><i class="bx bxl-youtube"></i
-          ></a>
-        </div>
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="./assets/about.jfif" alt="" />
+          </div>
 
-        <div class="home__img">
-          <img src="./assets/logo normal mode.png" alt="" srcset="" />
+          <div>
+            <h2 class="about__subtitle">Alexander Pasoquin</h2>
+            <p class="about__text">
+              A junior web developer who's in love with 💻 programming and
+              enjoys learning about new technologies. 🚀
+            </p>
+            <br /><br />
+            <p class="about__text">
+              A Software Development strand completer 🎓 under the TVL track.
+            </p>
+          </div>
         </div>
       </section>
       <div class="wrap-loader">
@@ -114,6 +96,7 @@
         </div>
         <div class="loader-text">LOADING</div>
       </div>
+
       <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
       <script src="https://unpkg.com/scrollreveal"></script>
