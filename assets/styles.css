@@ -253,9 +253,9 @@ img {
     top: var(--header-height);
     right: -100%;
     width: 80%;
-    height: 1000%;
+    height: 2000%;
     padding: 2rem;
-    background-color: rgba(113, 129, 109, 0.95);
+    background-color: rgba(235, 231, 217, 0.95);
     transition: 0.5s;
   }
 }
@@ -265,7 +265,7 @@ img {
 }
 .nav__link {
   position: relative;
-  color: #3c0000;
+  color: var(--bg-color);
 }
 .nav__link:hover {
   position: relative;
