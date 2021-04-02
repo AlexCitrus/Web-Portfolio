@@ -81,6 +81,23 @@ for (let i = 0; i < spanA.length; i++) {
   //   setInterval(spanA[i].classList.remove("in"), 3000);
 }
 
+const contactBtn = document.querySelector(".contact__button");
+const from = document.getElementById("from");
+
+
+contactBtn.addEventListener("click", Email.send({
+  Host : "smtp.yourisp.com",
+  Username : "username",
+  Password : "password",
+  To : 'kidong044@gmail.com',
+  From : "kidong044444.com",
+  Subject : "",
+  Body : "And this is the body"
+}).then(
+message => alert(message)
+))
+
+
 sr.reveal(".contact__input", {});
 sr.reveal(".contact__button", { delay: 100 });
 sr.reveal(".skills__names", { delay: 400 });
